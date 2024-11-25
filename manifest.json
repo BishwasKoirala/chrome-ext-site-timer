@@ -3,9 +3,10 @@
   "name": "Site-Timer",
   "description": "Set Timer to specic sites on access",
   "version": "1.0",
-  "action": {
-    "default_popup": "index.html",
-    "default_icon": "796855.png"
-    
-  }
+  "content_scripts" : [
+    {
+      "matches" : ["<all_urls>"],
+      "js" : ["content.js"]
+    }
+  ]
 }
